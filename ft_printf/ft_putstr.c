@@ -2,11 +2,9 @@
 
 void ft_putstr(char *str,int *len)
 {
-    int i;
-    i = 0;
-    while(str[i])
+    while(*str)
     {
         ft_putchar(*str, len);
-        (*str)++;
+        str++;
     }
 }

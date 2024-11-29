@@ -4,7 +4,7 @@ void	ft_putnbr(int nb,int *len)
 {
 	if(nb == -2147483648)
 	{
-		write(1, "-2147483648", 11);
+		ft_putstr("-2147483648", len);
 		return ;
 	}
 	if(nb < 0)
@@ -15,6 +15,6 @@ void	ft_putnbr(int nb,int *len)
 	if(nb > 9)
 	{
 		ft_putnbr(nb / 10, len);
-	ft_putchar(nb % 10 + '0', len);
+		ft_putchar(nb % 10 + '0', len);
 	}
 }
