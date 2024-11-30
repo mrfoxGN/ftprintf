@@ -1,2 +1,0 @@
-# ftprintf
-# ftprintf
